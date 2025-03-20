@@ -175,6 +175,8 @@ int sdrpp_main(int argc, char* argv[]) {
     defConfig["moduleInstances"]["File Source"]["enabled"] = true;
     defConfig["moduleInstances"]["FobosSDR Source"]["module"] = "fobossdr_source";
     defConfig["moduleInstances"]["FobosSDR Source"]["enabled"] = true;
+    defConfig["moduleInstances"]["FobosAgileSDR Source"]["module"] = "fobosagilesdr_source";
+    defConfig["moduleInstances"]["FobosAgileSDR Source"]["enabled"] = true;
     defConfig["moduleInstances"]["HackRF Source"]["module"] = "hackrf_source";
     defConfig["moduleInstances"]["HackRF Source"]["enabled"] = true;
     defConfig["moduleInstances"]["Harogic Source"]["module"] = "harogic_source";
