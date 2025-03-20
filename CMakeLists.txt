@@ -16,6 +16,7 @@ option(OPT_BUILD_BADGESDR_SOURCE "Build BadgeSDR Source Module (Dependencies: li
 option(OPT_BUILD_BLADERF_SOURCE "Build BladeRF Source Module (Dependencies: libbladeRF)" OFF)
 option(OPT_BUILD_FILE_SOURCE "Wav file source" ON)
 option(OPT_BUILD_FOBOSSDR_SOURCE "Build FobosSDR Source Module (Dependencies: libfobos)" OFF)
+option(OPT_BUILD_FOBOSAGILESDR_SOURCE "Build FobosAgileSDR Source Module (Dependencies: libfobos)" ON)
 option(OPT_BUILD_HACKRF_SOURCE "Build HackRF Source Module (Dependencies: libhackrf)" ON)
 option(OPT_BUILD_HAROGIC_SOURCE "Build Harogic Source Module (Dependencies: htra_api)" OFF)
 option(OPT_BUILD_HERMES_SOURCE "Build Hermes Source Module (no dependencies required)" ON)
@@ -149,6 +150,10 @@ endif (OPT_BUILD_FILE_SOURCE)
 if (OPT_BUILD_FOBOSSDR_SOURCE)
 add_subdirectory("source_modules/fobossdr_source")
 endif (OPT_BUILD_FOBOSSDR_SOURCE)
+
+if (OPT_BUILD_FOBOSAGILESDR_SOURCE)
+add_subdirectory("source_modules/fobosagilesdr_source")
+endif (OPT_BUILD_FOBOSAGILESDR_SOURCE)
 
 if (OPT_BUILD_HACKRF_SOURCE)
 add_subdirectory("source_modules/hackrf_source")
